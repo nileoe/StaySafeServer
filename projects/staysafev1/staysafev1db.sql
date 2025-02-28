@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2025 at 04:57 PM
+-- Generation Time: Feb 28, 2025 at 05:53 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -255,37 +255,38 @@ CREATE TABLE `Users` (
   `UserPassword` varchar(255) NOT NULL,
   `UserLatitude` float NOT NULL,
   `UserLongitude` float NOT NULL,
-  `UserTimestamp` bigint(20) NOT NULL
+  `UserTimestamp` bigint(20) NOT NULL,
+  `UserImageURL` varchar(255) NOT NULL DEFAULT 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `Users`
 --
 
-INSERT INTO `Users` (`UserID`, `UserFirstname`, `UserLastname`, `UserPhone`, `UserUsername`, `UserPassword`, `UserLatitude`, `UserLongitude`, `UserTimestamp`) VALUES
-(1, 'Aisha', 'Ahmed', '+44 7911 567890', 'aishaahmed', '', 0, 0, 0),
-(2, 'John', 'Williams', '+44 7911 123456', 'williams99', '', 0, 0, 0),
-(3, 'Zara', 'Patel', '+44 7911 876543', 'zarap1981', '', 0, 0, 0),
-(4, 'Mia', 'Brown', '+44 7911 234567', 'afternoonbrownies', '', 0, 0, 0),
-(5, 'Sarah', 'Lee', '+44 7911 345678', 'sara5678', '', 0, 0, 0),
-(6, 'David', 'Harris', '+44 7911 567987', 'davidHarris', '', 0, 0, 0),
-(7, 'Olivia', 'Martinez', '+44 7911 678012', 'MartinezOlivia2', '', 0, 0, 0),
-(8, 'Sofia', 'Garcia', '+44 7911 432109', 'sofia.garcia', '', 0, 0, 0),
-(9, 'Kai', 'Tanaka', '+44 7911 654321', 'tanakaK2020', '', 0, 0, 0),
-(10, 'Daniel', 'Thompson', '+44 7911 765432', 'dantheman123', '', 0, 0, 0),
-(11, 'Isabella', 'Robinson', '+44 7911 876210', 'isabella.a.robinson', '', 0, 0, 0),
-(12, 'Jamal', 'Ali', '+44 7911 987654', 'AliBama888', '', 0, 0, 0),
-(13, 'Mia', 'Lewis', '+44 7911 246810', 'isleoflewis', '', 0, 0, 0),
-(14, 'Ethan', 'Hall', '+44 7911 135790', 'ethanjeremyhall', '', 0, 0, 0),
-(15, 'Ava', 'Young', '+44 7911 369852', 'youngAtHeart', '', 0, 0, 0),
-(16, 'Liam', 'Evans', '+44 7911 888444', 'liam9999', '', 0, 0, 0),
-(17, 'Priya', 'Sharma', '+44 7911 777333', 'PriyaSharma', '', 0, 0, 0),
-(18, 'Noah', 'Hughes', '+44 7911 222555', 'NoahAndTheArk', '', 0, 0, 0),
-(19, 'Fatima', 'Khan', '+44 7911 666999', 'FatimaKhan1980', '', 0, 0, 0),
-(20, 'Oliver', 'Wright', '+44 7911 333222', 'TheWrightBrother', '', 0, 0, 0),
-(21, 'Pamela', 'Wilson', '+44 7911 123456', 'pamwilson', '', 0, 0, 0),
-(22, 'James', 'Yuen', '+44 7911 987654', 'LostInSpace', '', 0, 0, 0),
-(23, 'Graeme', 'Jones', '0208 417 2669', 'GraemeAJones', '', 0, 0, 0);
+INSERT INTO `Users` (`UserID`, `UserFirstname`, `UserLastname`, `UserPhone`, `UserUsername`, `UserPassword`, `UserLatitude`, `UserLongitude`, `UserTimestamp`, `UserImageURL`) VALUES
+(1, 'Aisha', 'Ahmed', '+44 7911 567890', 'aishaahmed', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(2, 'John', 'Williams', '+44 7911 123456', 'williams99', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(3, 'Zara', 'Patel', '+44 7911 876543', 'zarap1981', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(4, 'Mia', 'Brown', '+44 7911 234567', 'afternoonbrownies', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(5, 'Sarah', 'Lee', '+44 7911 345678', 'sara5678', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(6, 'David', 'Harris', '+44 7911 567987', 'davidHarris', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(7, 'Olivia', 'Martinez', '+44 7911 678012', 'MartinezOlivia2', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(8, 'Sofia', 'Garcia', '+44 7911 432109', 'sofia.garcia', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(9, 'Kai', 'Tanaka', '+44 7911 654321', 'tanakaK2020', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(10, 'Daniel', 'Thompson', '+44 7911 765432', 'dantheman123', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(11, 'Isabella', 'Robinson', '+44 7911 876210', 'isabella.a.robinson', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(12, 'Jamal', 'Ali', '+44 7911 987654', 'AliBama888', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(13, 'Mia', 'Lewis', '+44 7911 246810', 'isleoflewis', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(14, 'Ethan', 'Hall', '+44 7911 135790', 'ethanjeremyhall', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(15, 'Ava', 'Young', '+44 7911 369852', 'youngAtHeart', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(16, 'Liam', 'Evans', '+44 7911 888444', 'liam9999', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(17, 'Priya', 'Sharma', '+44 7911 777333', 'PriyaSharma', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(18, 'Noah', 'Hughes', '+44 7911 222555', 'NoahAndTheArk', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(19, 'Fatima', 'Khan', '+44 7911 666999', 'FatimaKhan1980', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(20, 'Oliver', 'Wright', '+44 7911 333222', 'TheWrightBrother', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(21, 'Pamela', 'Wilson', '+44 7911 123456', 'pamwilson', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(22, 'James', 'Yuen', '+44 7911 987654', 'LostInSpace', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg'),
+(23, 'Graeme', 'Jones', '0208 417 2669', 'GraemeAJones', '', 0, 0, 0, 'https://static.generated.photos/vue-static/face-generator/landing/wall/13.jpg');
 
 --
 -- Indexes for dumped tables

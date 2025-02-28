@@ -12,6 +12,7 @@ const model = {
     'UserLatitude',
     'UserLongitude',
     'UserTimestamp',
+    'UserImageURL',
   ],
 
   buildReadQuery: (req, variant) => {

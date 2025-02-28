@@ -12,6 +12,7 @@ schema.mutableFields = [
   'UserLatitude',
   'UserLongitude',
   'UserTimestamp',
+  'UserImageURL',
 ];
 
 schema.record = joi
@@ -25,6 +26,7 @@ schema.record = joi
     UserLatitude: joiValidGPS.latitude,
     UserLongitude: joiValidGPS.longitude,
     UserTimestamp: joiValidGPS.timestamp,
+    UserImageURL: joi.string().uri(),
   })
   .required()
   .unknown(true);
