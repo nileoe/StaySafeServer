@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2025 at 05:53 PM
+-- Generation Time: Mar 03, 2025 at 11:48 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -125,7 +125,7 @@ CREATE TABLE `Locations` (
   `LocationName` varchar(128) NOT NULL,
   `LocationDescription` varchar(255) NOT NULL,
   `LocationAddress` varchar(512) NOT NULL,
-  `LocationPostcode` varchar(16) NOT NULL,
+  `LocationPostcode` varchar(16) DEFAULT NULL,
   `LocationLatitude` float NOT NULL,
   `LocationLongitude` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
