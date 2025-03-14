@@ -5,6 +5,10 @@ const dbConfig = {
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PSWD || '',
   namedPlaceholders: true,
+  ssl: {
+  ca: process.env.AIVEN_CA_CERT.replace(/\\n/g, "\n"),
+  rejectUnauthorized: true,
+  }
 };
 
 export default dbConfig;
